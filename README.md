@@ -4,7 +4,7 @@ Write code and tests for a User Registration API service.
 ## Requirements
 Create three REST api to create, edit and read user registraion.
 The api should match the specs in the API specs section below.
-Use SprignBoot or any other framework.
+Use SprignBoot or any other framework that you are comfortable with. 
 
 
 ### API Specs
@@ -16,8 +16,6 @@ Use SprignBoot or any other framework.
 **Description**: This API endpoint allows the creation of a new user by providing user registration details in the request body. Upon successful creation, it returns the newly created user's details as a JSON response.
 
 The API should validate the inputs against the validation rules given in assignment 4. In addition you should ensure that usernames and emails are unique across all users.
-
-The API should verify if the address is a real adddress by using an external api. You can use [Azure address validation](https://learn.microsoft.com/en-us/rest/api/billing/2019-10-01-preview/address/validate?tabs=HTTP).
 
 The API should store the provided input in a CSV file. We are using the CSV file as a DB.
 
