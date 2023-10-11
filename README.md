@@ -9,8 +9,6 @@ Use SprignBoot or any other framework.
 
 ### API Specs
 
-Certainly, here are the API specifications for the POST route that creates a user:
-
 #### **API Endpoint**: `/user`
 
 **HTTP Method**: POST
