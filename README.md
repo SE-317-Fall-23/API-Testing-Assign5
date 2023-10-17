@@ -5,7 +5,7 @@ Write code and tests for a User Registration API service.
 Create three REST api to create, edit and read user registraion.
 The api should match the specs in the API specs section below.
 Use SprignBoot or any other framework that you are comfortable with. 
-
+Use Google Maps Address validation api [API Documentation](https://developers.google.com/maps/documentation/address-validation/overview)
 
 ### API Specs
 
@@ -128,4 +128,10 @@ This API endpoint expects a user ID as a path parameter, and it returns a JSON o
 ### Tests
 * Include the unit tests from the previous assginment in this submission.
 * Write tests for both routes
-* Use a test double to test the intergration with the address validation service. I.e. write unit tests for the address validation service integration
+* Use a test double to test the intergration with the address validation service. I.e. write unit tests for the address validation service integration and data access integration
+
+
+## Grading
+* POST and GET that satisfy the requirements (1 point)
+* API Tests for positive and negative scenarios (2 point)
+* Test use some form test doubles (2 points)
