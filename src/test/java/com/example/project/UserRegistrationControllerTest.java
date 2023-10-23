@@ -25,5 +25,17 @@ public class UserRegistrationControllerTest {
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.content().json(json));
     }
+
+    @Test
+    public void testCreateUser() throws Exception {
+    // arrange
+    String json = "{\"firstName\":\"John\",\"lastName\":\"Doe\",\"email\":\"john.doe@example.com\",\"password\":\"password\"}";
+
+    // act and assert
+    mockMvc.perform(MockMvcRequestBuilders.post("/user")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content(json))
+            .andExpect(MockMvcResultMatchers.status().isCreated());
+}
     
 }

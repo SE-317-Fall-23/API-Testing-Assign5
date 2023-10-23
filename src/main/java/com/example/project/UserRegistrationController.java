@@ -1,5 +1,6 @@
 package com.example.project;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,9 +11,10 @@ import com.example.project.model.UserRegistration;
 public class UserRegistrationController {
 
     @PostMapping
-    public ResponseEntity<?> createUser(@RequestBody UserRegistration userRequest) {
+    @ResponseStatus(HttpStatus.CREATED)
+    public ResponseEntity<String> createUser(@RequestBody UserRegistration userRequest) {
         // Implement user creation logic here
-        return ResponseEntity.ok().build();
+        return ResponseEntity.status(HttpStatus.CREATED).body("test");
     }
 
     @GetMapping("/{user-id}")
