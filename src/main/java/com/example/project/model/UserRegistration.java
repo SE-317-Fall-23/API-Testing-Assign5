@@ -3,11 +3,13 @@ package com.example.project.model;
 public class UserRegistration {
     private String firstName;
     private String lastName;
+    private Long id;
     // Add remaining fields here
 
-    public UserRegistration(String firstName, String lastName) {
+      public UserRegistration(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.id = null;
     }
 
     public String getFirstName() {
