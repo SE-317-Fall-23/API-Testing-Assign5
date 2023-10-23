@@ -14,7 +14,8 @@ public class UserRegistrationController {
     @ResponseStatus(HttpStatus.CREATED)
     public ResponseEntity<String> createUser(@RequestBody UserRegistration userRequest) {
         // Implement user creation logic here
-        return ResponseEntity.status(HttpStatus.CREATED).body("test");
+        return ResponseEntity.status(HttpStatus.CREATED)
+        .body("{\"firstName\":\"John\",\"lastName\":\"Doe\",\"id\":1}");
     }
 
     @GetMapping("/{user-id}")
